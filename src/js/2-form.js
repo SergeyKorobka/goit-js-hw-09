@@ -40,6 +40,7 @@ function submitHandler(e) {
 
   if (!email.value || !message.value) {
     alert('Fill please all fields');
+    return;
   }
 
   console.log(formData);
