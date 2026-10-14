@@ -1,5 +1,6 @@
 import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm.js';
 // Додатковий імпорт стилів
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
