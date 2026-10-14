@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/${GITHUB_REPOSITORY#*/}/",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
