@@ -32,12 +32,7 @@
   object-fit: cover;
 }
 
-.sl-overlay {
+/* body — щоб перебити .glightbox-mobile .goverlay з CSS бібліотеки */
+body .glightbox-container .goverlay {
   background: rgb(46, 47, 66);
-}
-
-.sl-wrapper .sl-close,
-.sl-wrapper .sl-counter,
-.sl-wrapper .sl-navigation button {
-  color: #fff;
 }
