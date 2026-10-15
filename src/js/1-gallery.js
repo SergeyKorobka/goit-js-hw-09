@@ -1,6 +1,6 @@
-import SimpleLightbox from 'simplelightbox';
+import GLightbox from 'glightbox';
 // Додатковий імпорт стилів
-import 'simplelightbox/dist/simple-lightbox.min.css';
+import 'glightbox/dist/css/glightbox.min.css';
 
 const images = [
   {
@@ -73,19 +73,14 @@ const galleryEl = document.querySelector('.gallery');
 const galleryMarkup = createGalleryMarkup(images);
 renderGallery(galleryEl, galleryMarkup);
 
-new SimpleLightbox('.gallery a', {
-  captions: true,
-  captionPosition: 'bottom',
-  captionType: 'attr',
-  captionSelector: 'img',
-  captionsData: 'alt',
-  captionDelay: 250,
+GLightbox({
+  selector: '.gallery-link',
 });
 
 function createCardMarkup({ preview, original, description }) {
   return `
       <li class="gallery-item">
-      <a class="gallery-link" href="${original}">
+      <a class="gallery-link" href="${original}" data-title="${description}">
         <img
           class="gallery-image"
           src="${preview}"
