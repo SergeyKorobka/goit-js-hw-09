@@ -32,7 +32,7 @@
   object-fit: cover;
 }
 
-/* body — щоб перебити .glightbox-mobile .goverlay з CSS бібліотеки */
-body .glightbox-container .goverlay {
-  background: rgb(46, 47, 66);
+/* щоб перебити .glightbox-mobile .goverlay з CSS бібліотеки */
+.glightbox-container .goverlay {
+  background: rgba(46, 47, 66, 0.8);
 }

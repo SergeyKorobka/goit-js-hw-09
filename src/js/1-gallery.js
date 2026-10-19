@@ -80,7 +80,7 @@ GLightbox({
 function createCardMarkup({ preview, original, description }) {
   return `
       <li class="gallery-item">
-      <a class="gallery-link" href="${original}" data-title="${description}">
+      <a class="gallery-link" href="${original}" data-description="${description}">
         <img
           class="gallery-image"
           src="${preview}"
