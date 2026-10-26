@@ -75,6 +75,7 @@ renderGallery(galleryEl, galleryMarkup);
 
 GLightbox({
   selector: '.gallery-link',
+  loop: true,
 });
 
 function createCardMarkup({ preview, original, description }) {
